@@ -1,5 +1,7 @@
 import math
 
+# Implement Regular Falsi Method
+
 
 def regular_falsi_method(a, b, f):
     xi = b - (((b - a) / (f(b) - f(a))) * f(b))

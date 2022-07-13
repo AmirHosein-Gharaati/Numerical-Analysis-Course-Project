@@ -53,10 +53,10 @@ e = float(e)
 
 N = int(N)
 
-# Note: You can combine above three section like this
-# x0 = float(input('Enter Guess: '))
-# e = float(input('Tolerable Error: '))
-# N = int(input('Maximum Step: '))
 
-# Starting Newton Raphson Method
+x0 = float(input('Enter Guess: '))
+e = float(input('Tolerable Error: '))
+N = int(input('Maximum Step: '))
+
+# Starting Newton Method
 newton_method(x0, e, N)
