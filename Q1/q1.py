@@ -15,7 +15,7 @@ def Cal_LU(D, g):
     return A, f
 
 
-def Back_Subs(A, f):
+def gaussian_elimination(A, f):
     n = f.size
     x = np.zeros(n)
     x[n - 1] = f[n - 1] / A[n - 1, n - 1]
@@ -41,5 +41,5 @@ A = np.array([[0.3, 9, -1, 3, -2],
 
 f = np.array([17, 3, 1, 15, -7])
 B, g = Cal_LU(A, f)
-Back_Subs(B, g)
+gaussian_elimination(B, g)
 
