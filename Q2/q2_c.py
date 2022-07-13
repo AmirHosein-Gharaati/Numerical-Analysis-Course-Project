@@ -7,7 +7,7 @@ def regular_falsi_method(a, b, f):
         a = xi
     else:
         b = xi
-    step = 0
+    step = 1
 
     while True:
         step += 1
@@ -24,3 +24,4 @@ res = regular_falsi_method(1, 2, f)
 xi = res[0]
 step = res[1]
 print('{:.4f}'.format(f(xi)))
+print('step = ', step)
