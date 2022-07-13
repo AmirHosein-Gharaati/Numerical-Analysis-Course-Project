@@ -1,5 +1,5 @@
 import numpy as np
-import sys
+
 
 
 def Cal_LU(D, g):
@@ -11,6 +11,7 @@ def Cal_LU(D, g):
             m = A[j, i] / A[i, i]
             A[j, :] = A[j, :] - m * A[i, :]
             f[j] = f[j] - m * f[i]
+
     return A, f
 
 
@@ -27,7 +28,7 @@ def Back_Subs(A, f):
     index = 0
     symboles = ['x', 'y', 'z', 'w', 'm']
     for t in x:
-        print(symboles[index],t, end='     ')
+        print(symboles[index],'= {:.4f}'.format(t), end='     ')
         index += 1
 
 
